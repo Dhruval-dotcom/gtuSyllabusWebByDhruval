@@ -11,8 +11,12 @@
       let conx=document.getElementsByClassName('fas fa-bars')
       let cony=document.getElementsByClassName('far fa-times')
       function fun1(){
-        document.getElementById("line").style.visibility="hidden"
-        document.getElementById("times").style.visibility="visible"
+         if(document.getElementById("line").classList.contains("fas fa-bars")
+         {document.getElementById("line").className="fas fa-times";}
+          else
+        {document.getElementById("line").className="fas fa-bars";}
+        //document.getElementById("line").style.visibility="hidden"
+        //document.getElementById("times").style.visibility="visible"
       }
       function fun2(){
         document.getElementById("times").style.visibility="hidden"
@@ -26,8 +30,7 @@
         <label for="check" class="checkbtn">
         <i class="fas fa-bars" id="line" onclick="fun1()">
         </i>
-        <i class="fas fa-times" style="visibility:hidden;" id="times" onclick="fun2()">
-        </i>
+         
         </label>
         <label class="logo">Welcome there!!! :)</label>
         <ul>
