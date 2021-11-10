@@ -7,14 +7,26 @@
     <title></title>
     <link rel="stylesheet" href="style ind.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-     
+    <script type="text/javascript">
+      let conx=document.getElementsByClassName('fas fa-bars')
+      let cony=document.getElementsByClassName('far fa-times')
+      function fun1(){
+        document.getElementById("line").style.visibility="hidden"
+        document.getElementById("times").style.visibility="visible"
+      }
+      function fun2(){
+        document.getElementById("times").style.visibility="hidden"
+        document.getElementById("line").style.visibility="visible"
+      }
+    </script>
   </head>
   <body>
     <nav>
         <input type="checkbox" name="check" value="" id="check">
         <label for="check" class="checkbtn">
-        
-        <i class="far fa-times" id="times">
+        <i class="fas fa-bars" id="line" onclick="fun1()">
+        </i>
+        <i class="far fa-times" id="times" onclick="fun2()">
         </i>
         </label>
         <label class="logo">Welcome there!!! :)</label>
