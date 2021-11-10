@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GTU syllabus</title>
+    <title>chat web</title>
     <link rel="stylesheet" href="style ind.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript">
+      let conx=document.getElementsByClassName('fas fa-bars')
+      let cony=document.getElementsByClassName('far fa-times')
+      function fun1(){
+        conx.style.visibility='hidden'
+        cony.style.visibility='visible'
+      }
+      function fun2(){
+        conx.style.visibility='visible'
+        cony.style.visibility='hidden'
+      }
+    </script>
   </head>
   <body>
     <nav>
         <input type="checkbox" name="check" value="" id="check">
         <label for="check" class="checkbtn">
-        <i class="fas fa-bars">
+        <i class="fas fa-bars" onclick="fun1()">
+        </i>
+        <i class="far fa-times" onclick="fun2()">
         </i>
         </label>
         <label class="logo">Welcome there!!! :)</label>
